@@ -1,0 +1,8 @@
+**/*{.,-}min.js
+**/node_modules/**
+/_book
+public/
+test-projects/
+/docs
+coverage
+docs-site

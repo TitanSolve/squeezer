@@ -1,0 +1,6 @@
+- identifier : 'project:validate'
+  path : 'validate'
+  function : 'run'
+- identifier : 'project:info'
+  path : 'info'
+  function : 'run'

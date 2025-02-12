@@ -1,0 +1,30 @@
+.DS_Store
+.env
+node_modules
+dist/*
+!dist/.gitkeep
+*.log
+.idea
+.history
+
+# eslint cache
+.eslintcache
+
+# just a simple test.js
+test.js
+
+# docs
+!docs
+docs/_book
+docs/docs
+
+# coverage
+
+coverage/
+lib-cov/
+coverage.json
+
+.history
+
+**/src/.vars.json
+**/src/vars.json

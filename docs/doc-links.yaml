@@ -1,0 +1,60 @@
+- title: Introduction
+  links:
+    Getting Started: /getting-started/
+- title: Development
+  links:
+    Function: /development/function/
+    Variables: /development/variables/
+    Yaml: /development/yaml/
+    Access key: /development/access-key/
+    Runtime: /development/runtime/
+    Testing: /development/testing/
+    Packaging: /development/packaging/
+    Command Hooks: /development/command-hooks/
+- title: Events
+  links:
+    Http:
+      Configure: /events/http/configure/
+      NodeJS: /events/http/nodejs/
+    Schedule:
+      Configure: /events/schedule/configure/
+      NodeJS: /events/schedule/nodejs/
+- title: Cloud Providers
+  links:
+    Amazon Web Services:
+      Introduction: /cloud/aws/introduction/
+      Setting up credentials: /cloud/aws/credentials/
+    Microsoft Azure:
+      Introduction: /cloud/azure/introduction/
+      Setting up credentials: /cloud/azure/credentials/
+- title: Plugin
+  links:
+    Introduction: /plugin/introduction/
+    Lifecycle: /plugin/lifecycle/
+    Example: /plugin/example/
+    Debugging: /plugin/debugging/
+- title: CLI
+  links:
+    compile: /cli/compile/
+    config: /cli/config/
+    create: /cli/create/
+    deploy: /cli/deploy/
+    fileutils:
+      copy: /cli/fileutils-copy/
+      empty: /cli/fileutils-empty/
+      mkdir: /cli/fileutils-mkdir/
+      link: /cli/fileutils-link/
+      move: /cli/fileutils-move/
+      remove: /cli/fileutils-remove/
+      sync: /cli/fileutils-sync/
+    help: /cli/help/
+    init: /cli/init/
+    install: /cli/install/
+    invoke: /cli/invoke/
+    genkey: /cli/genkey/
+    list: /cli/list/
+    remove: /cli/remove/
+    run: /cli/run/
+    templates: /cli/templates/
+    test: /cli/test/
+    version: /cli/version/

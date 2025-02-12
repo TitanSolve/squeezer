@@ -1,0 +1,86 @@
+name: hello
+
+event:
+  type: http
+  path: /rest/v1/hello/*
+  methods:
+    - GET
+    - POST
+ 
+packaging:
+  - .vars.json
+
+swagger:
+  paths:
+    /rest/v1/hello/anything/you/want/:
+      get:
+        summary: Says hello
+        description: Says hello
+        parameters:
+          - name: name
+            in: query
+            description: your name
+            required: true
+            type: string 
+        tags:
+          - Hello
+        produces:
+          - application/json
+        responses:
+          200:
+            description: successful operation
+            schema:
+              $ref: '#/definitions/RestV1HelloNameResponse'
+          400:
+            description: bad request
+            schema:
+              $ref: '#/definitions/ErrorResponse'
+          500:
+            description: internal error
+      post:
+        summary: Says hello
+        description: Says hello
+        parameters:    
+          - name: name
+            in: query
+            description: your name
+            required: true
+            type: string 
+          - in: body
+            name: body
+            description: message body
+            required: true
+            schema:
+              $ref: '#/definitions/HelloMessage'               
+        tags:
+          - Hello
+        produces:
+          - application/json
+        responses:
+          200:
+            description: successful operation
+            schema:
+              $ref: '#/definitions/RestV1HelloNameResponse'
+          400:
+            description: bad request
+            schema:
+              $ref: '#/definitions/ErrorResponse'
+          500:
+            description: internal error                
+  definitions:
+    RestV1HelloNameResponse:
+      type: object
+      properties:
+        name:
+          type: string
+        number:
+          type: string
+        message:
+          type: string
+    HelloMessage:
+      type: object
+      required:
+        - message
+      properties:
+        message:
+          type: string

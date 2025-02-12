@@ -1,0 +1,22 @@
+plugins:
+  - config
+  - test
+  - deploy
+  - invoke
+  - run
+  - logs
+  - help
+  - list
+  - init
+  - project
+  - functions
+  - create
+  - serve
+  - version
+  - templates
+  - install
+  - compile
+# - update
+  - fileutils
+  - key
+#  - docker
